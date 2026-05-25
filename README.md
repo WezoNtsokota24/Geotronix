@@ -1,2 +1,2 @@
-# Geotronics
-Website for Construction company
+# Geotronix Core
+Website for Industrial Asset Management and Project Execution

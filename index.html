@@ -2,60 +2,211 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Geotronics | Building the Future, Restoring the Past</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geotronix Core | Industrial Infrastructure & Operations</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+            --border: #000000;
+            --muted: #666666;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto auto;
+            width: 100%;
+        }
+        header {
+            margin-bottom: 3rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-top: 0.75rem;
+            font-weight: 600;
+        }
+        .divider {
+            height: 2px;
+            background-color: var(--text);
+            margin: 2rem 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        @media (max-width: 768px) {
+            .grid { 
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            h1 { font-size: 2.5rem; }
+        }
+        .sector-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .sector-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border: 1px solid var(--text);
+            margin-bottom: 1rem;
+            filter: grayscale(100%); /* Forces the industrial black/white look */
+        }
+        .sector-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+        p {
+            font-size: 1rem;
+            color: #222;
+            margin-bottom: 1.5rem;
+        }
+        .fleet-section {
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            border-top: 2px solid var(--text);
+            padding-top: 2rem;
+        }
+        .fleet-container {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .fleet-image {
+            width: 50%;
+            border: 1px solid var(--text);
+            filter: grayscale(100%); /* Optional: keeps the car in black/white theme */
+        }
+        .fleet-text {
+            width: 50%;
+        }
+        @media (max-width: 768px) {
+            .fleet-container {
+                flex-direction: column;
+            }
+            .fleet-image, .fleet-text {
+                width: 100%;
+            }
+        }
+        .cta-container {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            border: 1px solid var(--text);
+            transition: all 0.2s ease;
+        }
+        .btn-dark {
+            background-color: var(--text);
+            color: var(--bg);
+        }
+        .btn-dark:hover {
+            background-color: #333;
+        }
+        .btn-light {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        .btn-light:hover {
+            background-color: #f5f5f5;
+        }
+        footer {
+            margin-top: auto;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e5e5;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
 <body>
-    <div class="animated-icons">
-        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6a7.png" alt="Construction Cone" class="icon icon-cone">
-        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f477.png" alt="Worker" class="icon icon-worker">
-        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3d7.png" alt="Building Construction" class="icon icon-building">
-    </div>
-    <header style="text-align:center; margin-top:30px;">
-        <!-- Creative Logo Placeholder -->
-        <div style="font-size:2.5em; font-weight:bold; color:#2a3d45;">GEOTRONICS</div>
-        <div style="font-size:1.2em; color:#4e6e81; font-style:italic;">"Building the Future, Restoring the Past"</div>
-    </header>
-    <main style="max-width:700px; margin:40px auto; font-family:sans-serif;">
-        <section>
-            <h1>Welcome to Geotronics</h1>
-            <p>We are a leading construction company specializing in building construction, mining, renovations, and more. Our commitment to quality, safety, and innovation sets us apart in the industry.</p>
-            <div class="gallery-row">
-                <img src="images/GO.jpeg" alt="Geotronics Construction Site" class="gallery-img">
+    <div class="container">
+        <header>
+            <h1>Geotronix Core</h1>
+            <div class="subtitle">Industrial Infrastructure & Operations</div>
+        </header>
+
+        <div class="divider"></div>
+
+        <div class="grid">
+            <!-- Construction Sector -->
+            <div class="sector-card">
+                <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80" alt="Geotronix Core Civil Construction" class="sector-image">
+                <h2 class="sector-title">Civil Construction</h2>
+                <p>Deploying large-scale site preparation, heavy earthworks, road infrastructure development, and vendor logistics management across the Eastern Cape.</p>
             </div>
-        </section>
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li><h2>Building Construction</h2> <img src="images/work.jpeg" alt="Building Construction" class="icon-inline bordered"></li>
-                <li><h2>Mining</h2> <img src="images/MIne.jpeg" alt="Mining" class="icon-inline bordered"></li>
-                <li><h2>Renovations</h2> <img src="images/LIL.jpeg" alt="Renovations" class="icon-inline bordered"></li>
-                <li><h2>Project Management</h2> <img src="images/GO.jpeg" alt="Project Management" class="icon-inline bordered"></li>
-                <li><h2>Consulting &amp; Engineering</h2> <img src="images/download (1).jpeg" alt="Consulting & Engineering" class="icon-inline bordered"></li>
-            </ul>
-            <div class="gallery-row">
-                <img src="images/LIL.jpeg" alt="Renovation Project" class="gallery-img">
-                <img src="images/download (1).jpeg" alt="Consulting" class="gallery-img">
+            
+            <!-- Mining Sector -->
+            <div class="sector-card">
+                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80" alt="Geotronix Core Mining Operations" class="sector-image">
+                <h2 class="sector-title">Mining Operations</h2>
+                <p>Enforcing rigorous regulatory compliance, supply chain execution, and mineral resource transport utilizing centralized, data-driven tracking architectures.</p>
             </div>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>Email: <a href="Geotronics@outlook.com">Geotronics@outlook.com</a></p>
-            <p>Phone: 0716183765</p>
-            <p>Address: 23 Buffalo Thorn st , EastLondon, South Africa</p>
-        </section>
-        <section>
-            <h2>Meet Our Director</h2>
-            <li><h2>Kwakho Ntsokota</h2></li>
-            <img src="images/Director.jpeg" alt="Director Kwakho Ntsokota" class="director-img bordered">
-        </section>
-        <footer style="text-align:center; margin-top:40px; color:#888;">
-            &copy; 2025 Geotronics. All rights reserved.
+        </div>
+
+        <!-- Managed Fleet Section -->
+        <div class="fleet-section">
+            <h2 class="sector-title">Managed Fleet Logistics</h2>
+            <div class="fleet-container">
+                <!-- Ensure you save the car mockup as fleet.png in your images folder -->
+                <img src="images/fleet.png" alt="Geotronix Core Fleet Vehicle" class="fleet-image">
+                <div class="fleet-text">
+                    <p><strong>Operational Readiness:</strong> Geotronix Core maintains a strict, vetted network of transport and site logistics vehicles. Our managed fleet ensures rapid deployment and secure mineral resource transport, fully integrated with our central tracking systems.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-container">
+            <a href="about.html" class="btn btn-dark">Corporate Overview</a>
+            <a href="mailto:systems@geotronixcore.co.za" class="btn btn-light">Secure Portal Contact</a>
+        </div>
+
+        <footer>
+            <div>Geotronix Core &copy; 2026</div>
+            <div>Systems Integration // EC Execution</div>
         </footer>
-    </main>
-    <nav style="position:fixed; top:10px; right:10px;">
-        <a href="about.html" style="background:#2a3d45; color:#fff; padding:8px 16px; border-radius:4px; text-decoration:none;">About Us</a>
-    </nav>
+    </div>
 </body>
 </html>

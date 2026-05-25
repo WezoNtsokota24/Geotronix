@@ -2,46 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About Geotronics</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Geotronix Core</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #000000;
+            --border: #000000;
+            --muted: #666666;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        nav {
+            margin-bottom: 4rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 700;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--text);
+            padding-bottom: 1rem;
+        }
+        .corporate-statement {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 3rem;
+            color: #111;
+        }
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin: 2.5rem 0 1rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid var(--text);
+        }
+        p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: #222;
+        }
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        @media (max-width: 768px) {
+            .pillar-grid { grid-template-columns: 1fr; }
+        }
+        .pillar {
+            border-left: 3px solid var(--text);
+            padding-left: 1rem;
+        }
+        .pillar h3 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            margin-top: 6rem;
+            border-top: 1px solid #e5e5e5;
+            padding-top: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
 </head>
 <body>
-    <div class="animated-icons">
-        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f6a7.png" alt="Construction Cone" class="icon icon-cone">
-        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f477.png" alt="Worker" class="icon icon-worker">
-        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f3d7.png" alt="Building Construction" class="icon icon-building">
+    <div class="container">
+        <nav>
+            <a href="index.html">← Index</a>
+        </nav>
+
+        <main>
+            <h1>Corporate Overview</h1>
+            
+            <p class="corporate-statement">
+                Geotronix Core is an industrial asset management and project execution firm specializing in civil construction and mining infrastructure operations within the Eastern Cape region.
+            </p>
+
+            <h2>Operating Framework</h2>
+            <p>
+                We operate under a specialized corporate model that combines highly vetted physical execution partners with centralized, proprietary tracking systems. This approach allows Geotronix Core to scale operations rapidly, absorb project risks, and ensure institutional-grade compliance on every site we manage.
+            </p>
+
+            <div class="pillar-grid">
+                <div class="pillar">
+                    <h3>I. Core Infrastructure</h3>
+                    <p style="font-size: 0.9rem; color: #444;">Deployment of optimized civil construction methodologies, raw earthworks, site preparation, and industrial logistics through an elite network of regional operators.</p>
+                </div>
+                <div class="pillar">
+                    <h3>II. Operational Intelligence</h3>
+                    <p style="font-size: 0.9rem; color: #444;">Centralized data management systems that monitor contractor performance, material haulage pipelines, and site compliance metrics in real-time.</p>
+                </div>
+            </div>
+
+            <h2>Risk Mitigation & Compliance</h2>
+            <p>
+                By functioning as a primary systems integrator, Geotronix Core removes the standard operational blind spots inherent in traditional contracting. We manage the supply chain, enforce strict health and safety protocols, and deliver verified, transparent reporting directly to corporate and public sector stakeholders.
+            </p>
+        </main>
+
+        <footer>
+            &copy; 2026 Geotronix Core. Confidential & Proprietary.
+        </footer>
     </div>
-    <header style="text-align:center; margin-top:30px;">
-        <!-- Creative Logo Placeholder -->
-        <div style="font-size:2.5em; font-weight:bold; color:#2a3d45;">GEOTRONICS</div>
-        <div style="font-size:1.2em; color:#4e6e81; font-style:italic;">"Building the Future, Restoring the Past"</div>
-    </header>
-    <main style="max-width:700px; margin:40px auto; font-family:sans-serif;">
-        <section>
-            <h2>About Us</h2>
-            <p>Geotronics is a leading construction company specializing in building construction, mining, renovations, and more. Under the direction of Kwakho Ntsokota, we are committed to delivering quality, safety, and innovation in every project we undertake.</p>
-        </section>
-        <section>
-            <h2>Our Services</h2>
-            <ul>
-                <li>Building Construction</li>
-                <li>Mining</li>
-                <li>Renovations</li>
-                <li>Project Management</li>
-                <li>Consulting &amp; Engineering</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:info@geotronics.com">info@geotronics.com</a></p>
-            <p>Phone: +1 (234) 567-8901</p>
-            <p>Address: 123 Main Street, City, Country</p>
-        </section>
-        <section>
-            <h2>Our Team</h2>
-            <p><strong>Director:</strong> Kwakho Ntsokota</p>
-        </section>
-    </main>
 </body>
 </html>
