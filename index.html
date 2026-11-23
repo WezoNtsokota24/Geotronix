@@ -3,210 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geotronix Core | Industrial Infrastructure & Operations</title>
-    <style>
-        :root {
-            --bg: #ffffff;
-            --text: #000000;
-            --border: #000000;
-            --muted: #666666;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-        }
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            padding: 2rem;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto auto;
-            width: 100%;
-        }
-        header {
-            margin-bottom: 3rem;
-        }
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            letter-spacing: -0.05em;
-            text-transform: uppercase;
-            line-height: 1;
-        }
-        .subtitle {
-            font-size: 1.1rem;
-            color: var(--muted);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            margin-top: 0.75rem;
-            font-weight: 600;
-        }
-        .divider {
-            height: 2px;
-            background-color: var(--text);
-            margin: 2rem 0;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-        @media (max-width: 768px) {
-            .grid { 
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            h1 { font-size: 2.5rem; }
-        }
-        .sector-card {
-            display: flex;
-            flex-direction: column;
-        }
-        .sector-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border: 1px solid var(--text);
-            margin-bottom: 1rem;
-            filter: grayscale(100%); /* Forces the industrial black/white look */
-        }
-        .sector-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            margin-bottom: 0.75rem;
-            letter-spacing: 0.05em;
-        }
-        p {
-            font-size: 1rem;
-            color: #222;
-            margin-bottom: 1.5rem;
-        }
-        .fleet-section {
-            margin-top: 2rem;
-            margin-bottom: 4rem;
-            border-top: 2px solid var(--text);
-            padding-top: 2rem;
-        }
-        .fleet-container {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        .fleet-image {
-            width: 50%;
-            border: 1px solid var(--text);
-            filter: grayscale(100%); /* Optional: keeps the car in black/white theme */
-        }
-        .fleet-text {
-            width: 50%;
-        }
-        @media (max-width: 768px) {
-            .fleet-container {
-                flex-direction: column;
-            }
-            .fleet-image, .fleet-text {
-                width: 100%;
-            }
-        }
-        .cta-container {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 1rem;
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.75rem 1.5rem;
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            text-decoration: none;
-            border: 1px solid var(--text);
-            transition: all 0.2s ease;
-        }
-        .btn-dark {
-            background-color: var(--text);
-            color: var(--bg);
-        }
-        .btn-dark:hover {
-            background-color: #333;
-        }
-        .btn-light {
-            background-color: var(--bg);
-            color: var(--text);
-        }
-        .btn-light:hover {
-            background-color: #f5f5f5;
-        }
-        footer {
-            margin-top: auto;
-            padding-top: 2rem;
-            border-top: 1px solid #e5e5e5;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            color: var(--muted);
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
+    <title>GEOTRONIX CORE // INDUSTRIAL INFRASTRUCTURE & OPERATIONS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Geotronix Core</h1>
-            <div class="subtitle">Industrial Infrastructure & Operations</div>
-        </header>
-
-        <div class="divider"></div>
-
-        <div class="grid">
-            <!-- Construction Sector -->
-            <div class="sector-card">
-                <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80" alt="Geotronix Core Civil Construction" class="sector-image">
-                <h2 class="sector-title">Civil Construction</h2>
-                <p>Deploying large-scale site preparation, heavy earthworks, road infrastructure development, and vendor logistics management across the Eastern Cape.</p>
-            </div>
-            
-            <!-- Mining Sector -->
-            <div class="sector-card">
-                <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1200&q=80" alt="Geotronix Core Mining Operations" class="sector-image">
-                <h2 class="sector-title">Mining Operations</h2>
-                <p>Enforcing rigorous regulatory compliance, supply chain execution, and mineral resource transport utilizing centralized, data-driven tracking architectures.</p>
+    <nav class="top-nav">
+        <div class="container">
+            <div class="logo">GEOTRONIX CORE</div>
+            <div class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="#capabilities">CAPABILITIES</a>
+                <a href="about.html">ABOUT & COMPLIANCE</a>
+                <a href="#contact">CONTACT</a>
             </div>
         </div>
+    </nav>
 
-        <!-- Managed Fleet Section -->
-        <div class="fleet-section">
-            <h2 class="sector-title">Managed Fleet Logistics</h2>
-            <div class="fleet-container">
-                <!-- Ensure you save the car mockup as fleet.png in your images folder -->
-                <img src="images/fleet.png" alt="Geotronix Core Fleet Vehicle" class="fleet-image">
-                <div class="fleet-text">
-                    <p><strong>Operational Readiness:</strong> Geotronix Core maintains a strict, vetted network of transport and site logistics vehicles. Our managed fleet ensures rapid deployment and secure mineral resource transport, fully integrated with our central tracking systems.</p>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="subtitle">Eastern Cape // Systems Integration</div>
+                <h1>GEOTRONIX CORE // INDUSTRIAL INFRASTRUCTURE & OPERATIONS</h1>
+                <p style="max-width: 600px; margin-top: 2rem;">Geotronix Core delivers disciplined, data-driven infrastructure and project execution management. We bridge the gap between complex industrial requirements and on-the-ground execution readiness.</p>
+                <div style="margin-top: 3rem; display: flex; gap: 1rem;">
+                    <a href="#contact" class="btn btn-primary">Tender Inquiry</a>
+                    <a href="about.html" class="btn btn-outline">Corporate Profile</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="cta-container">
-            <a href="about.html" class="btn btn-dark">Corporate Overview</a>
-            <a href="mailto:systems@geotronixcore.co.za" class="btn btn-light">Secure Portal Contact</a>
-        </div>
+        <section id="capabilities" class="capabilities">
+            <div class="container">
+                <h2>Core Operations</h2>
+                <div class="grid-2">
+                    <div class="grid-item sector-card">
+                        <div class="sector-image-wrapper">
+                            <img src="images/construction.jpg" alt="Civil Construction" class="sector-image">
+                        </div>
+                        <h3>Civil Construction</h3>
+                        <p>Deploying large-scale site preparation, heavy earthworks, road infrastructure development, and vendor logistics management across the Eastern Cape.</p>
+                    </div>
+                    <div class="grid-item sector-card">
+                        <div class="sector-image-wrapper">
+                            <img src="images/mining.jpg" alt="Mining Operations" class="sector-image">
+                        </div>
+                        <h3>Mining Operations</h3>
+                        <p>Enforcing rigorous regulatory compliance, supply chain execution, and mineral resource transport utilizing centralized, data-driven tracking architectures.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <footer>
-            <div>Geotronix Core &copy; 2026</div>
-            <div>Systems Integration // EC Execution</div>
-        </footer>
-    </div>
+        <section class="fleet">
+            <div class="container">
+                <h2>Managed Fleet Logistics</h2>
+                <div class="fleet-flex">
+                    <div class="fleet-image-container">
+                        <img src="images/fleet.png" alt="Geotronix Core Fleet Vehicle" style="width: 100%; display: block; filter: grayscale(100%);">
+                    </div>
+                    <div class="fleet-content">
+                        <p><strong>Operational Readiness:</strong> Geotronix Core maintains a strict, vetted network of transport and site logistics vehicles. Our managed fleet ensures rapid deployment and secure mineral resource transport, fully integrated with our central tracking systems.</p>
+                        <p>We eliminate logistics bottlenecks through proactive maintenance schedules and real-time telemetry, ensuring that plant and fleet availability remains at peak performance levels for duration-critical operations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="compliance">
+            <div class="container">
+                <h2>Operational Standards & Compliance Matrix</h2>
+                <div class="matrix-container" style="overflow-x: auto;">
+                    <table class="matrix-table">
+                        <thead>
+                            <tr>
+                                <th>Category</th>
+                                <th>Institutional Readiness</th>
+                                <th>Framework Alignment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Regulatory & Vendor Readiness</strong></td>
+                                <td>CSD Compliant, SARS Tax Clearance Ready.</td>
+                                <td>Full alignment with CIDB Framework requirements for national and regional infrastructure tenders.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Turnkey Execution</strong></td>
+                                <td>Strict HSE / Mine Health & Safety Act compliance.</td>
+                                <td>Vetted specialist plant & fleet network with mandatory safety induction protocols for all subcontractors.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Data-Driven Oversight</strong></td>
+                                <td>Centralized logistics tracking and milestone telemetry.</td>
+                                <td>Transparent procurement reporting and auditable project lifecycle documentation for all stakeholders.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Direct Tender & Procurement Contact</h2>
+                <div class="contact-flex">
+                    <div class="contact-info">
+                        <p>For official tender invitations, procurement inquiries, or subcontractor vetting, please use the secure contact channel or reach our operations base directly.</p>
+                        <div style="margin-top: 2rem;">
+                            <p><strong>Phone:</strong> 079 798 0570</p>
+                            <p><strong>Email:</strong> wezontsokota02@gmail.com</p>
+                            <p><strong>Operations Base:</strong><br>23 Buffalo Thorn Street<br>Eastern Cape, South Africa</p>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/wezontsokota02@gmail.com" method="POST">
+                            <div class="form-group">
+                                <label>Department / Organization</label>
+                                <input type="text" name="organization" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Inquiry Type</label>
+                                <input type="text" name="subject" placeholder="Tender / Procurement / Partnership" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Detailed Requirements</label>
+                                <textarea name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="corporate-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">GEOTRONIX CORE</div>
+                    <p style="font-size: 0.8rem; max-width: 300px;">Industrial asset management and project execution firm specializing in infrastructure operations within the Eastern Cape.</p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-heading">Navigation</div>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#capabilities">Capabilities</a></li>
+                        <li><a href="about.html">About & Compliance</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <div class="footer-heading">Compliance</div>
+                    <ul class="footer-links">
+                        <li><a href="#">HSE Policy</a></li>
+                        <li><a href="#">B-BBEE Status</a></li>
+                        <li><a href="#">Vendor Portal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2026 GEOTRONIX CORE. All Rights Reserved.</div>
+                <div>Systems Integration // EC Execution</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
